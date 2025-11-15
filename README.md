@@ -1,4 +1,10 @@
--- Server-side spawner script (Roblox Lua)
+Copy
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+local Window = Library.CreateLib("TITLE", "DarkTheme")
+
+local Tab = Window:NewTab("main")
+Section:NewButton("ButtonText", "ButtonInfo", function(-- Server-side spawner script (Roblox Lua)
 -- Place in ServerScriptService
 -- Requirements:
 --   - ServerStorage.Latamrot (a Model)
@@ -129,3 +135,6 @@ remoteEvent.OnServerEvent:Connect(function(player, action)
 end)
 
 print("Spawner loaded. Auto-spawn:", tostring(autoSpawnEnabled), "Interval:", spawnInterval)
+)
+    print("Clicked")
+end)
